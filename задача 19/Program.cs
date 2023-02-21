@@ -1,0 +1,10 @@
+﻿Console.WriteLine("Введите пятизначное число: ");
+int number = int.Parse(Console.ReadLine());
+int a,b,c,d,e;
+e = number % 10;
+d = (number/10)%10;
+c = (number/100)%10;
+b = (number/1000)%10;
+a = number/10000;
+if (a==e && b==d) Console.WriteLine("Число является палиндромом.");
+else Console.WriteLine("Число не является палиндромом.");
